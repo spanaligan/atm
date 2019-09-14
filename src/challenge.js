@@ -20,6 +20,9 @@ submitChecking.addEventListener('click', function (evt) {
             // parseFloat or I get a really weird multiple decimal number.
             checkingBalance.textContent = '$' + totalCheckingDeposit;
             // got the balance to update to the cumulative deposit!
+            if (totalCheckingDeposit > 0) {
+                redChecking.classList.remove('zero');
+            }
         }
     } else if (evt.target.className === 'withdraw') {
         if (isNaN(Number(enterCheckingData.value))) {
@@ -57,7 +60,9 @@ submitSavings.addEventListener('click', function (evt) {
         } else {
             totalSavingsDeposit += parseFloat(Number(enterSavingsData.value).toFixed(2));
             savingsBalance.textContent = '$' + totalSavingsDeposit;
-
+            if (totalSavingsDeposit > 0) {
+                redSavings.classList.remove('zero');
+            }
         }
     } else if (evt.target.className === 'withdraw') {
         if (isNaN(Number(enterSavingsData.value))) {
