@@ -1,6 +1,22 @@
 @import url(http://fonts.googleapis.com/css?family=Oleo+Script);
 @import url(http://fonts.googleapis.com/css?family=Ruluko);
+nav {
+  background-color: #678b9a;
+  padding: 15px;
+  margin: 15px;
+  justify-content: space-around;
+  border: 2px solid #36505a;
+  border-radius: 15px;
+}
+nav a {
+  font-family: 'Ruluko', sans-serif;
+  text-decoration: none;
+  color: #36505A;
+  margin: 0 50px 0;
+  font-weight: bolder;
+  font-size: 20px;
 
+}
 body {
   font-family: 'Ruluko', sans-serif;
   margin: 0px auto;
